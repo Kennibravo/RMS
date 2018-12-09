@@ -23,4 +23,5 @@ Route::prefix('admin')->group(function() {
 
 Auth::routes();
 
+Route::resource('posts', 'ProfileController');
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
